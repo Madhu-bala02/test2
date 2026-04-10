@@ -4,7 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DevOps 5 Days Beginner Workshop</title>
+
   <style>
+    :root {
+      --primary: #FEB449;
+      --dark: #2c2c2c;
+      --light-bg: #fff8ef;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -13,14 +20,14 @@
     }
 
     body {
-      background: #f4f7fb;
-      color: #333;
+      background: var(--light-bg);
+      color: var(--dark);
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: white;
+      background: var(--primary);
+      color: #fff;
       text-align: center;
       padding: 50px 20px;
     }
@@ -43,7 +50,7 @@
     .section-title {
       text-align: center;
       margin-bottom: 25px;
-      color: #1e3c72;
+      color: var(--primary);
       font-size: 2rem;
     }
 
@@ -68,6 +75,7 @@
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
       transition: transform 0.3s ease;
+      border-top: 5px solid var(--primary);
     }
 
     .day-card:hover {
@@ -75,7 +83,7 @@
     }
 
     .day-card h3 {
-      color: #2a5298;
+      color: var(--primary);
       margin-bottom: 10px;
     }
 
@@ -88,17 +96,17 @@
     }
 
     .highlight {
-      background: #eaf2ff;
+      background: #fff2d9;
       padding: 25px;
-      border-left: 5px solid #2a5298;
+      border-left: 5px solid var(--primary);
       border-radius: 10px;
       margin-top: 30px;
     }
 
     footer {
       text-align: center;
-      background: #1e3c72;
-      color: white;
+      background: var(--primary);
+      color: #fff;
       padding: 15px;
       margin-top: 40px;
     }
@@ -107,23 +115,24 @@
       display: inline-block;
       margin-top: 20px;
       padding: 12px 22px;
-      background: #2a5298;
-      color: white;
+      background: var(--primary);
+      color: #fff;
       text-decoration: none;
       border-radius: 8px;
-      transition: background 0.3s ease;
+      transition: 0.3s;
     }
 
     .btn:hover {
-      background: #163b73;
+      background: #e69c2f;
     }
   </style>
 </head>
+
 <body>
 
   <header>
     <h1>DevOps 5 Days Beginner Workshop</h1>
-    <p>Learn the basics of DevOps step by step in a simple and practical way</p>
+    <p>Learn DevOps from scratch with simple and practical steps</p>
   </header>
 
   <div class="container">
@@ -131,54 +140,54 @@
     <section class="intro">
       <h2 class="section-title">About the Workshop</h2>
       <p>
-        This 5-day beginner workshop is designed to introduce students and freshers
-        to the fundamentals of DevOps. Participants will understand development,
-        deployment, automation, collaboration, and basic tools used in real projects.
+        This 5-day beginner workshop introduces DevOps concepts in a simple and
+        practical way. Learn development, deployment, automation, and cloud basics.
       </p>
       <a href="#" class="btn">Register Now</a>
     </section>
 
     <section>
       <h2 class="section-title">Workshop Schedule</h2>
+
       <div class="days">
-        
+
         <div class="day-card">
           <h3>Day 1</h3>
           <ul>
             <li>Introduction to DevOps</li>
-            <li>What is SDLC?</li>
-            <li>Difference between Dev and Ops</li>
-            <li>Why DevOps is important</li>
+            <li>SDLC Basics</li>
+            <li>Dev vs Ops</li>
+            <li>Real-world examples</li>
           </ul>
         </div>
 
         <div class="day-card">
           <h3>Day 2</h3>
           <ul>
-            <li>Version Control Basics</li>
-            <li>Introduction to Git and GitHub</li>
-            <li>Repository and Branch Concepts</li>
-            <li>Basic Git Commands</li>
+            <li>Git & GitHub Basics</li>
+            <li>Repositories & Branches</li>
+            <li>Commit & Push</li>
+            <li>Version control flow</li>
           </ul>
         </div>
 
         <div class="day-card">
           <h3>Day 3</h3>
           <ul>
-            <li>Introduction to Linux</li>
-            <li>Basic Linux Commands</li>
-            <li>Server Basics</li>
-            <li>Working in Terminal</li>
+            <li>Linux Basics</li>
+            <li>Terminal Commands</li>
+            <li>Server Introduction</li>
+            <li>File management</li>
           </ul>
         </div>
 
         <div class="day-card">
           <h3>Day 4</h3>
           <ul>
-            <li>What is CI/CD?</li>
-            <li>Build and Deployment Basics</li>
-            <li>Introduction to Automation</li>
-            <li>Simple Pipeline Flow</li>
+            <li>CI/CD Basics</li>
+            <li>Automation Concept</li>
+            <li>Pipeline Flow</li>
+            <li>Deployment idea</li>
           </ul>
         </div>
 
@@ -186,9 +195,9 @@
           <h3>Day 5</h3>
           <ul>
             <li>Cloud Basics</li>
-            <li>Introduction to AWS</li>
-            <li>Simple Project Deployment</li>
-            <li>Workshop Wrap-up</li>
+            <li>AWS Introduction</li>
+            <li>Simple Deployment</li>
+            <li>Final Project</li>
           </ul>
         </div>
 
@@ -198,15 +207,14 @@
     <section class="highlight">
       <h2>Who Can Join?</h2>
       <p>
-        This workshop is perfect for beginners, students, freshers, and anyone who
-        wants to start learning DevOps with simple concepts and hands-on exposure.
+        Perfect for beginners, students, and anyone interested in starting a career in DevOps.
       </p>
     </section>
 
   </div>
 
   <footer>
-    <p>© 2026 DevOps Beginner Workshop | All Rights Reserved</p>
+    <p>© 2026 DevOps Workshop | Designed with #FEB449</p>
   </footer>
 
 </body>
